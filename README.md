@@ -61,3 +61,17 @@ The target variable is:
    ```bash
    git clone https://github.com/yourusername/Heart-Disease-Prediction.git
    cd Heart-Disease-Prediction
+
+## Model Training
+
+I experimented with several machine learning models to predict heart disease, including Logistic Regression, Random Forest, and Support Vector Machines (SVM). After performing **hyperparameter tuning** on the Random Forest model, the performance was optimized, achieving an **accuracy of 88%**.
+
+I also implemented **feature importance** to identify the most significant risk factors for heart disease. The top predictors were found to be:
+- Cholesterol level
+- Maximum heart rate achieved
+- Age
+- Resting blood pressure
+
+To increase the **interpretability** of the model, I used **SHAP values** to explain the contribution of each feature to the model's predictions, which revealed interesting insights like the significant influence of age on heart disease prediction.
+
+Additionally, I deployed the model on a **web app** using R's **Shiny** framework, allowing users to input their health data and receive a prediction regarding their risk for heart disease.
